@@ -1,0 +1,63 @@
+/*
+Add your custom css here. Do not touch on style-color-name.css files
+*/
+
+
+.left { float: left; }
+.right { float: right; }
+
+#section-bottom a { color: #428bca; }
+
+select { height: 38px; }
+
+input[type="email"] { 
+	width: 100%; 
+	background: #F5F5F5;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	box-shadow: none;
+	display: inline-block;
+	line-height: 25px;
+	margin-bottom: 15px;
+	padding: 5px;
+	resize: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	vertical-align: middle;
+}
+input[type="email"]:focus, input[type="email"]:hover {
+	border: 1px solid #522C53 !important;
+	background: #FFF;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+input[type="email"] {
+	background: #F5F5F5;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	box-shadow: none;
+	display: inline-block;
+	line-height: 25px;
+	margin-bottom: 15px;
+	padding: 5px;
+	resize: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	vertical-align: middle;
+}
+label[for="edit-submitted-full-name"] { display: none; }
+
+
+body { font-family: "Lato", sans-serif !important; }
+
+#webform-client-form-105 .form-item { margin-top: 0; margin-bottom: 0; }
+
+#section-subscribe { background: url(../images/subscribe4.jpg) no-repeat; }
