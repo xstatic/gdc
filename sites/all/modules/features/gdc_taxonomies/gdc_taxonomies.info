@@ -1,0 +1,16 @@
+name = GDC Taxonomies
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = gdc_taxonomies
+dependencies[] = features
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_term_color
+features[field_instance][] = taxonomy_term-portfolio_category-field_term_color
+features[taxonomy][] = blog_categories
+features[taxonomy][] = forums
+features[taxonomy][] = newsletter_categories
+features[taxonomy][] = portfolio_category
+features[taxonomy][] = tags
