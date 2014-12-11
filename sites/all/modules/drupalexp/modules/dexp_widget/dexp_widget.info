@@ -1,4 +1,0 @@
-name = Flickr widget
-description = Get images from flickr site for a given account 
-core = 7.x
-package = DrupalExp

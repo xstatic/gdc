@@ -1,4 +1,0 @@
-name = DrupalExp
-description = "Base module for Drupalexp framework"
-core = 7.x
-package = DrupalExp

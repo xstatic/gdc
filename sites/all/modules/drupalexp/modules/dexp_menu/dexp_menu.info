@@ -1,4 +1,0 @@
-name = Dexp menu
-description = "Provide dropdown menu."
-core = 7.x
-package = DrupalExp
