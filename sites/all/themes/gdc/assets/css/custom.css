@@ -565,3 +565,17 @@ body.ie .services-box:hover .back {
   height: 100%;
   top: 0;
 }
+
+.overlay-wrp h2 { color: #fff; }
+
+.hub .dexp-social-icon {
+  width: 70px;
+  height: 70px;
+  line-height: 66px;
+}
+.hub .dexp-social-white { border: 0 none !important; }
+.hub.node-team .overlay-wrp ul a { font-size: 50px !important; }
+.hub.node-team .overlay-wrp { top: 0 !important; }
+.hub .team {margin-bottom: 0px;}
+
+
