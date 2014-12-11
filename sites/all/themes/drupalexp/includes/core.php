@@ -234,21 +234,19 @@ class druplexp_theme extends stdClass {
   }
 
   function regionRender($region) {
-    $drupal_static = &drupal_static(__FUNCTION__);
-    if (!isset($drupal_static[$region->key])) {
-        if ($region->key == 'logo') {
-            $content = '<div class="col-xs-' . $region->colxs . ' col-sm-' . $region->colsm . ' col-md-' . $region->colmd . ' col-lg-' . $region->collg . '">' . l('<img src="' . $this->page['logo'] . '" alt=""/>', '<front>', array('html' => true, 'attributes' => array('class' => array('site-logo')))) . '</div>';
-          } else {
-            $content = render($this->page['page'][$region->key]);
-          }
-        if($content){
-            $region_class = drupal_html_class('region-'.$region->key);
-            $drupal_static[$region->key] =  '<!-- .'.$region_class.'-->'.PHP_EOL.$content.'<!-- END .'.$region_class.'-->'.PHP_EOL;
-        }else{
-            $drupal_static[$region->key] = '';
-        }
+    if (!isset($this->tmpcontent[$region->key])) {
+      if ($region->key == 'logo') {
+        $this->tmpcontent[$region->key] = '<div class="col-xs-' . $region->colxs . ' col-sm-' . $region->colsm . ' col-md-' . $region->colmd . ' col-lg-' . $region->collg . '">' . l('<img src="' . $this->page['logo'] . '" alt=""/>', '<front>', array('html' => true, 'attributes' => array('class' => array('site-logo')))) . '</div>';
+      } else {
+        $this->tmpcontent[$region->key] = render($this->page['page'][$region->key]);
+      }
     }
-    return $drupal_static[$region->key];
+    if($this->tmpcontent[$region->key]){
+      $region_class = drupal_html_class('region-'.$region->key);
+      return '<!-- .'.$region_class.'-->'.PHP_EOL.$this->tmpcontent[$region->key].'<!-- END .'.$region_class.'-->'.PHP_EOL;
+    }else{
+      return '';
+    }
   }
 
   function getRegion($region_key) {
