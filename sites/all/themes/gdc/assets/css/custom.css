@@ -580,3 +580,9 @@ body.ie .services-box:hover .back {
 
 #section-bottom .address li { padding-bottom: 5px !important; }
 #section-bottom ul.address { margin-bottom: 10px}
+#section-bottom .address {
+  font-family: "Lato", sans-serif !important;
+  color: #fff;
+}
+
+.dexp-list.list-02 li:before { content: "\f064"; }
